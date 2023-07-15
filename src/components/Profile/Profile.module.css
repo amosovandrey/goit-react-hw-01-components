@@ -2,18 +2,32 @@
 
 body {
   background: #a4bdb7;
-  font-family: 'Nunito', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  padding: 0;
+  list-style: none;
 }
 
 .profile {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin: 16px auto;
+  justify-content: center;
+  align-items: center;
   padding: 24px;
-  width: 350px;
+  max-width: 320px;
   height: fit-content;
   border-radius: 20px;
-  padding: 10px;
+
   text-align: center;
   background: #ededed;
+  font-family: 'Nunito', sans-serif;
 }
 
 .description {
@@ -22,6 +36,14 @@ body {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  background-image: linear-gradient(to right, #d7a548 55%, #000000 45%);
+  background-size: 220% 100%;
+  background-position: 100% 50%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-repeat: no-repeat;
+  transition: 0.5s ease-out;
 }
 
 .avatar {
@@ -33,4 +55,37 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
+}
+
+.name {
+  font-size: 1.25em;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.description:hover {
+  background-position: 0% 50%;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 0.65em;
+  font-weight: bolder;
+  color: gray;
+}
+
+.stats > li {
+  display: flex;
+  gap: 4px;
+}
+
+.quantity {
+  cursor: pointer;
+  transition: linear 250ms;
+}
+.quantity:hover {
+  transform: translateX(4px);
+  color: black;
 }
