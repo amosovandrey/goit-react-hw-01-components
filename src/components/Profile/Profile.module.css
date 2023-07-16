@@ -4,16 +4,6 @@ body {
   background: #a4bdb7;
 }
 
-p {
-  margin: 0;
-}
-
-ul,
-li {
-  padding: 0;
-  list-style: none;
-}
-
 .profile {
   display: flex;
   flex-direction: column;
@@ -35,7 +25,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   background-image: linear-gradient(to right, #d7a548 55%, #000000 45%);
   background-size: 220% 100%;
   background-position: 100% 50%;
@@ -44,6 +34,7 @@ li {
   background-clip: text;
   background-repeat: no-repeat;
   transition: 0.5s ease-out;
+  margin-bottom: 16px;
 }
 
 .avatar {
@@ -82,7 +73,7 @@ li {
 }
 
 .quantity {
-  cursor: pointer;
+  cursor: default;
   transition: linear 250ms;
 }
 .quantity:hover {

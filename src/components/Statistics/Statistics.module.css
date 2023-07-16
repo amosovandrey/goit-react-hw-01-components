@@ -1,0 +1,82 @@
+.statistics {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 16px;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  max-width: 320px;
+  height: fit-content;
+  border-radius: 20px;
+
+  text-align: center;
+  background: #ededed;
+  font-family: 'Nunito', sans-serif;
+}
+
+.title {
+  font-size: 1.25em;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+
+  background-image: linear-gradient(to right, #d7a548 55%, #000000 45%);
+  background-size: 220% 100%;
+  background-position: 100% 50%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-repeat: no-repeat;
+  transition: 0.5s ease-out;
+}
+
+.title:hover {
+  background-position: 0% 50%;
+}
+
+.stat_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  border-width: 1px;
+  border-color: grey;
+  border-style: solid;
+  border-radius: 8px;
+
+  min-width: calc((100% - 80px) / 3);
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 4px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-weight: bolder;
+  background-color: #a4bdb7;
+}
+
+.percentage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 4px;
+}
+
+.item:hover .percentage {
+  font-weight: bolder;
+}
