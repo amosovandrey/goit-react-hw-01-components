@@ -47,13 +47,15 @@ export const Item = styled.li`
   align-items: center;
 `;
 
-export const Status = styled.span`
+export const Status = styled.span.attrs(props => ({
+  isOnline: props.isOnline,
+}))`
   display: inline-block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: ${friend => (friend.isOnline ? 'green' : 'red')};
-  animation: ${friend => (friend.isOnline ? blinkAnimation : fadeAnimation)} 3s
+  background-color: ${props => (props.isOnline ? 'green' : 'red')};
+  animation: ${props => (props.isOnline ? blinkAnimation : fadeAnimation)} 1s
     linear infinite;
 `;
 
