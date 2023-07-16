@@ -52,8 +52,8 @@ export const Status = styled.span`
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: ${props => (props.isOnline ? 'green' : 'red')};
-  animation: ${props => (props.isOnline ? blinkAnimation : fadeAnimation)} 3s
+  background-color: ${friend => (friend.isOnline ? 'green' : 'red')};
+  animation: ${friend => (friend.isOnline ? blinkAnimation : fadeAnimation)} 3s
     linear infinite;
 `;
 
