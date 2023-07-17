@@ -47,9 +47,7 @@ export const Item = styled.li`
   align-items: center;
 `;
 
-export const Status = styled.span.attrs(props => ({
-  isOnline: props.isOnline,
-}))`
+export const Status = styled.span`
   display: inline-block;
   width: 10px;
   height: 10px;
