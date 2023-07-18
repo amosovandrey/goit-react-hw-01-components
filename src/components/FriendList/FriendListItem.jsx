@@ -5,7 +5,7 @@ export const FriendListItem = friend => {
   return (
     <Item>
       <Status
-        style={{ backgroundColor: `${friend.isOnline ? '#008000' : 'red'}` }}
+        style={{ backgroundColor: `${friend.isOnline ? 'green' : 'red'}` }}
       />
       <Avatar src={friend.avatar} alt="User avatar" width="48" />
       <FriendName>{friend.name}</FriendName>

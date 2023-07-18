@@ -1,28 +1,4 @@
-import styled, { keyframes } from 'styled-components';
-
-const blinkAnimation = keyframes`
-  0% {
-    background-color: green;
-  }
-  50% {
-    background-color: lightgreen;
-  }
-  100% {
-    background-color: green;
-  }
-`;
-
-const fadeAnimation = keyframes`
-  0% {
-    background-color: red;
-  }
-  50% {
-    background-color: lightcoral;
-  }
-  100% {
-    background-color: red;
-  }
-`;
+import styled from 'styled-components';
 
 export const List = styled.ul`
   display: flex;
@@ -52,8 +28,6 @@ export const Status = styled.span`
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  animation: ${props => (props.isOnline ? blinkAnimation : fadeAnimation)} 3s
-    linear infinite;
 `;
 
 export const Avatar = styled.img`
